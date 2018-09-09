@@ -27,7 +27,21 @@ h1, h2, h3 {
     &.sm-heading {
         margin-bottom: 2em;
         padding: 0.2rem 1rem;
+        color: $primary-color;
+        background: rgba(darken(#000, 2), 0.7);
+    }
+}
+
+#work {
+    .sm-heading {
+        margin-top: 1em;
+        margin-bottom: 0.75em;
+        text-align: center;
+        padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color, 2), 0.5);
+        font-size: 2.5rem;
+        color: $sec-color;
+        border: 1px solid #fff;
     }
 }
 
@@ -162,10 +176,10 @@ main {
         &:hover {
             padding: 0.5rem 1.5rem;
             background: $sec-color;
-            color: set-text-color($sec-color);
+            color: $primary-color;
 
             span {
-                color: set-text-color($sec-color);
+                color: $primary-color;
             }
         }
     }
@@ -180,20 +194,21 @@ main {
 
     &:hover {
         background: $sec-color;
-        color: set-text-color($sec-color);
+        color: $primary-color;
     }
 }
 
 .btn-dark {
     @extend .btn;
-    background: darken($primary-color, 50);
+    background: darken($primary-color, 100);
     color: #fff;
 }
 
 .btn-light {
     @extend .btn;
     background: lighten($primary-color, 50);
-    color: #333;
+    font-weight: 500;
+    color: #222;
 }
 
 #main-foo {
